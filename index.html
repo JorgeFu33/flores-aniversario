@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f8ff;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: red;
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .jarro {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            background-color: #8B4513;
+            border-radius: 50px 50px 0 0;
+            margin-bottom: 20px;
+            border: 5px solid #5E2605;
+        }
+
+        .flower {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .flower::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+
+        .stem {
+            position: absolute;
+            width: 5px;
+            height: 80px;
+            background-color: green;
+            top: -80px;
+        }
+
+        /* Posiciones de las flores */
+        .flower1 { top: -100px; left: -50px; }
+        .flower2 { top: -120px; left: 30px; }
+        .flower3 { top: -140px; left: 70px; }
+        .flower4 { top: -110px; left: 110px; }
+        .flower5 { top: -90px; left: 10px; }
+
+    </style>
+</head>
+<body>
+    <!-- Texto superior -->
+    <h1>Feliz aniversario</h1>
+
+    <!-- Jarrón con flores -->
+    <div class="jarro">
+        <!-- Tallo y flores -->
+        <div class="stem" style="left: 20px;"></div>
+        <div class="flower flower1"></div>
+
+        <div class="stem" style="left: 40px;"></div>
+        <div class="flower flower2"></div>
+
+        <div class="stem" style="left: 60px;"></div>
+        <div class="flower flower3"></div>
+
+        <div class="stem" style="left: 80px;"></div>
+        <div class="flower flower4"></div>
+
+        <div class="stem" style="left: 100px;"></div>
+        <div class="flower flower5"></div>
+    </div>
+
+    <!-- Texto inferior -->
+    <h2>Te amo</h2>
+</body>
+</html>
